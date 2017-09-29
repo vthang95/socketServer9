@@ -14,9 +14,12 @@
     "socketio-wildcard": "^0.3.0"
   },
   "devDependencies": {
+    "concurrently": "^3.5.0",
+    "http-server": "^0.10.0",
     "ip": "^1.1.4"
   },
   "scripts": {
+    "start": "concurrently \"node index.js\" \"open http://localhost:3484\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
